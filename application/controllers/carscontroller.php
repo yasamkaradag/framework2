@@ -10,7 +10,7 @@
                 $name=$_POST['name']; $model =$_POST['model']; $year = $_POST['year'];
                 $color =$_POST['color']; $torque =$_POST['torque'];
                 $errors = array();
-                foreach ($_POST as $key=>$value){ //is can be empty or not defined
+                foreach ($_POST as $key=>$value){ //is can be empty or not defin
                     if(!isset($value) || $value == ""){$errors[$key] = "Please type a  ".$key."...";}
                 }
                 if (empty($_FILES['image']['name'])) {
